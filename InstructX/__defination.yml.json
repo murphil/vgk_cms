@@ -1,0 +1,25 @@
+{
+  "frontEnd": {
+    "_": "src",
+    "components": {
+      "_": "src/components",
+      "ContentRender": {
+        "_": "src/components/ContentRender"
+      },
+      "LayoutRender": {
+        "_": "src/components/LayoutRender"
+      }
+    }
+  },
+  "upload": {
+    "_": "uploads",
+    "public": {
+      "layout": {
+        "_": "uploads/public/layout"
+      }
+    }
+  },
+  "backEnd": {
+    "_": "server"
+  }
+}

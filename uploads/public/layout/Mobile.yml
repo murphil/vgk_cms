@@ -1,0 +1,19 @@
+type: Mobile
+
+header:
+  type: RowContainer
+  children:
+    - type: qrcode
+      title: 天鹏网络
+      size: 256
+      dark: '#00B081'
+      payload: |
+        http://www.tianpeng.com
+footer:
+  type: RowContainer
+  css:
+  children:
+    - type: navigator
+
+
+

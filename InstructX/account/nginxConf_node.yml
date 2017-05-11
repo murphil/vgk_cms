@@ -1,0 +1,7 @@
+server:
+  - localhost:9999
+server_port: 80
+server_name:
+  - www.sdtpkj.com
+  - sdtpkj.com
+  - localhost

@@ -1,0 +1,75 @@
+type: ScrollContainer
+title: this is a cms
+children:
+  - type: ColumnContainer
+    css:
+      background: url('/public/img/banner_bg.jpg') no-repeat fixed
+      height: 512px
+    children:
+      - type: OverlayContainer
+        children:
+          - type: ColumnContainer
+            style:
+              - transparent-black
+              - padding5
+            children:
+              - type: markdown
+                css:
+                  margin: 1em
+                style:
+                  - slogan-invert
+                payload: |
+                  # 拥有一个网站，让世界了解你
+                  ## CRAFTING QUALITY PRODUCTS
+              - type: button
+                style:
+                  - large
+                  - green
+                  - round
+                  - solid
+                text: 免费试用版本
+          - type: SVG
+            children:
+              - type: svgBgBubble
+                num: 20
+              - type: svgPCB
+
+  - type: RowContainer
+    style:
+      - invert
+    css:
+      padding: 2em 10em 2em 10em
+      justifyContent: space-around
+    children:
+      - type: figure
+        style:
+          - invert
+        img: /public/img/tp/b1.png
+        md: |
+          ##### 让应用程序操作更加简单更高效
+          让应用程序操作更加简单更高效
+          让应用程序操作更加简单更高效
+      - type: figure
+        style:
+          - invert
+        img: /public/img/tp/b2.png
+        md: |
+          ##### 让应用程序操作更加简单更高效
+          让应用程序操作更加简单更高效
+          让应用程序操作更加简单更高效
+      - type: figure
+        style:
+          - invert
+        img: /public/img/tp/b3.png
+        md: |
+          ##### 让应用程序操作更加简单更高效
+          让应用程序操作更加简单更高效
+          让应用程序操作更加简单更高效
+      - type: figure
+        style:
+          - invert
+        img: /public/img/tp/b4.png
+        md: |
+          ##### 让应用程序操作更加简单更高效
+          让应用程序操作更加简单更高效
+          让应用程序操作更加简单更高效

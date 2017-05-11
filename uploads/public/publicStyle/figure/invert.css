@@ -1,0 +1,83 @@
+@top {
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #fdf6e3;
+    background-color: transparent;
+}
+
+@top .markdown {
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@top .markdown a {
+    color: #b7d6d0;
+    text-decoration: none;
+    background-color: transparent;
+}
+@top .markdown a:active,
+@top .markdown a:hover {
+    outline-width: 0;
+    text-decoration: underline;
+}
+@top .markdown strong {
+    font-weight: 600;
+}
+@top .markdown hr {
+    height: 0;
+    margin: 15px 0;
+    overflow: hidden;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+}
+@top .markdown hr::before {
+    display: table;
+    content: "";
+}
+@top .markdown hr::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+@top .markdown h1,
+@top .markdown h2,
+@top .markdown h3,
+@top .markdown h4,
+@top .markdown h5,
+@top .markdown h6 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+@top .markdown h1:hover .anchor,
+@top .markdown h2:hover .anchor,
+@top .markdown h3:hover .anchor,
+@top .markdown h4:hover .anchor,
+@top .markdown h5:hover .anchor,
+@top .markdown h6:hover .anchor {
+    text-decoration: none;
+}
+
+@top .markdown h1 { font-size: 4em}
+@top .markdown h2 { font-size: 3em}
+@top .markdown h3 { font-size: 2.5em}
+@top .markdown h4 { font-size: 2em}
+@top .markdown h5 { font-size: 1.7em}
+@top .markdown h6 { font-size: 1.6em; color: #bdbdbd
+}
+
+@top .markdown pre {
+    margin-top: 0;
+    margin-bottom: 0;
+    font: 6em Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}

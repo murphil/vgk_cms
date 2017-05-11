@@ -1,0 +1,89 @@
+type: ScrollContainer
+title: this is a cms
+children:
+  - type: ColumnContainer
+    css:
+      background: url('/public/img/banner_bg.jpg') no-repeat fixed
+      height: 512px
+    children:
+      - type: OverlayContainer
+        children:
+          - type: ColumnContainer
+            style:
+              - transparent-black
+              - padding5
+            children:
+              - type: markdown
+                css:
+                  margin: 1em
+                style:
+                  - slogan-invert
+                payload: |
+                  # 拥有一个网站，让世界了解你
+                  ## CRAFTING QUALITY PRODUCTS
+              - type: button
+                style:
+                  - large
+                  - green
+                  - round
+                  - solid
+                text: 免费试用版本
+          - type: SVG
+            children:
+              - type: svgBgBubble
+                num: 30
+              - type: svgPCB
+
+  - type: ColumnContainer
+    css:
+      background: url('/public/img/bg_l.jpg') no-repeat
+    children:
+      - type: ColumnContainer
+        css:
+          padding: 10em
+          background: rgba(247,247,247,0.7)
+        children:
+          - type: markdown
+            style:
+              - slogan
+            payload: |
+              # 平台四大优势修改项目标题
+          - type: RowContainer
+            css:
+              justifyContent: space-around
+            children:
+              - type: figure
+                img: /public/img/tp/a1.png
+                md: |
+                  ###  自助建站平台
+              - type: figure
+                img: /public/img/tp/a4.png
+                md: |
+                  ### IT项目外包
+              - type: figure
+                img: /public/img/tp/a3.png
+                md: |
+                  ### 定制软件开发
+              - type: figure
+                img: /public/img/tp/a2.png
+                md: |
+                  ### 可视化内容编辑
+  - type: ColumnContainer
+    css:
+      background: url('/public/img/bg_l2.jpg') no-repeat
+    children:
+      - type: ColumnContainer
+        css:
+          padding: 1em 10em 1em 10em
+          background: rgba(249,249,249,0.9)
+          borderTop: '1px solid #e0e0e0'
+        children:
+          - type: markdown
+            css:
+              marginBottom: 3em
+            style:
+              - slogan
+            payload: |
+              ### 使用模块组合，像搭积木一般构建网页
+              ### 可视化编辑，所想即所得
+          - type: treeEditor

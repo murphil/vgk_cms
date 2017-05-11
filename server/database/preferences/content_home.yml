@@ -1,0 +1,96 @@
+type: ScrollContainer
+title: this is a cms
+children:
+  -
+    type: Carousel
+    column: null
+    title: null
+    children:
+      -
+        type: picture
+        url: public/xxxxxx
+        title: first
+      -
+        type: picture
+        url: public/yyyyy
+        title: second
+      -
+        type: picture
+        url: public/zzzzz
+        title: third
+  -
+    type: tinyBar
+    column: news
+    speed: 1
+  -
+    type: RowContainer
+    children:
+      -
+        type: categoryList
+        category_uri: deposit
+        title: c1栏目动态
+        brief: true
+      -
+        type: categoryList
+        category_uri: payment53
+        title: c2栏目动态
+        brief: true
+      -
+        type: categoryList
+        category_uri: main
+        title: c3栏目动态
+        brief: true
+  -
+    type: markdown
+    payload: |
+      In the words of Abraham Lincoln:
+
+      > Pardon my French
+
+      ~~This was mistaken text~~
+
+      *This text is italicized*
+
+      **This is bold text**
+
+      Use `git status` to list all new or modified files that haven't yet been committed.
+
+      ```
+      git status
+      git add
+      git commit
+      ```
+
+      - George Washington
+      - John Adams
+      - Thomas Jefferson
+
+      1. James Madison
+      2. James Monroe
+      3. John Quincy Adams
+
+      1. Make my changes
+        1. Fix bug
+        2. Improve formatting
+          * Make the headings bigger
+      2. Push my commits to GitHub
+      3. Open a pull request
+        * Describe my changes
+        * Mention all the members of my team
+          * Ask for feedback
+
+      - [x] Finish my changes
+      - [ ] Push my commits to GitHub
+      - [ ] Open a pull request
+
+
+
+
+
+
+  -
+    type: plainText
+    payload: |
+      Ipsam qui unde qui voluptas a porro accusantium. Praesentium sit non molestias optio tempora earum qui. Consequatur exercitationem itaque rem aperiam mollitia rerum neque libero. Vel ea voluptatem sed laborum ipsa est. Unde sed voluptates sit est eum et. Et odio qui qui eaque quis.
+      Et dicta aliquam cum nisi ratione eius enim aut ipsum. Dicta nam laborum alias laboriosam odio a fuga quae animi. In eos nulla reprehenderit sed nisi eos ad voluptatibus vel. Consequuntur optio sequi. Voluptatem molestiae voluptates corrupti et saepe.
+      Fugiat dignissimos deleniti ipsam. Sunt aut voluptatibus voluptatum eaque aut quo. Nostrum in minus suscipit atque doloribus quis inventore.

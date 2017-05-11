@@ -1,0 +1,3 @@
+type: categoryList
+category_uri: ~  # column为null显示当前栏目
+title: ~   # title为null显示当前栏目标题

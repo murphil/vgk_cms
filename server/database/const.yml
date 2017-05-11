@@ -1,0 +1,317 @@
+SCHEMA:
+  USER:
+    GROUP:
+      _: "_group"
+      ID: "id"
+      PID: "parent_id"
+      NAME: "name"
+      COMMENT: "comment"
+      ATTR: attributes
+    USER:
+      _: "_user"
+      ID: "id"
+      GID: "group_id"
+      ACCOUNT: "account"
+      NAME: "name"
+      PASSWORD: "password"
+      GROUP: "group"
+      BAN: "ban"
+      CTS: "created_at"
+      UTS: "updated_at"
+      ATTR: attributes
+      TOKEN: "token"
+      NEWPWD: "new_password"
+    ROLE:
+      _: "_role"
+      ID: "id"
+      NAME: "name"
+      COMMENT: "comment"
+    POWER:
+      _: "_power"
+      ID: "id"
+      NAME: "name"
+      COMMENT: "comment"
+    USER_ROLE:
+      _: "_user_role"
+      UID: "uid"
+      RID: "rid"
+    ROLE_POWER:
+      _: "_role_power"
+      RID: "rid"
+      PID: "pid"
+  RESOURCE:
+    RESOURCE_EXT:
+      _: "resource_ext"
+      ID: "id"
+      NAME: "name"
+      CTY: "content_type"
+      ATTACH: attachment
+      TYPE: "type"
+      COMMENT: "comment"
+    RESOURCE:
+      _: "resource"
+      ID: "id"
+      TYPE: "type"
+      NAME: "name"
+      EXT: "ext"
+      PATH: "path"
+      FILE: "file"
+      OWNER: "owner"
+      ATTR: "attributes"
+      MODE: "mode"
+  CONTENT:
+    COL_TYP:
+      _: "category_type"
+      ID: "id"
+      NAME: "name"
+      LAYOUT: layout
+      MainType: "main"
+      ListType: "list"
+    CATEGORY:
+      _: "category"
+      ID: "id"
+      PID: "parent_id"
+      MT: maintainer
+      TYPE: "type"
+      NAME: "name"
+      URI: "uri"
+      WEIGHT: "weight"
+      CONTENT: "content"
+      HID: "hidden"
+      CTS: "created_at"
+      UTS: "updated_at"
+      ATTR: "attributes"
+      TYPENAME: "type_name"
+      PAGECONTENT: "page_content"
+      ARTICLELST: "article_list"
+      CurrentLayout: current_layout
+      STYLESHEET: style_sheet
+      MainUri: "main"
+      ArticleLimit: "article_limit"
+    ARTICLE:
+      _: "article"
+      ID: "id"
+      CID: "category_id"
+      TITLE: "title"
+      URI: "uri"
+      AUTHOR: "author"
+      SUMMARY: summary
+      CONTENT: "content"
+      HID: "hidden"
+      CTS: "created_at"
+      UTS: "updated_at"
+      ATTR: "attributes"
+      CURI: "category_uri"
+  WORKFLOW:
+    TEMPLATE:
+      _: workflow_template
+      NAME: name  # no ID
+      VER: version
+      CONTENT: content
+      CTS: created_at
+      ATTR: attributes #json
+    RECORD:
+      _: workflow
+      ID: id
+      UID: user_id
+      TN: template_name
+      TV: template_version
+      CTS: created_at
+      UTS: updated_at
+    MAIL:
+      _: mail
+      ID: id
+      FID: from_id # ref user
+      TID: to_id # ref user
+      TYPE: type
+      CONTNET: content #json
+      RID: replay_id # ref mail
+      CTS: created_at
+      UTS: updated_at
+      ATTR: attributes
+    MAILTYPE:
+      _: mail_type
+      ID: id
+      NAME: name
+      COMMENT: comment
+      ATTR: attributes
+      externalMessage: externalMessage
+
+  AD:
+    CATEGORY:
+      _: ad_category
+      ID: "id"
+      PID: "parent_id"
+      MT: maintainer
+      NAME: "name"
+      URI: "uri"
+      WEIGHT: "weight"
+      CONTENT: "content"
+      HID: "hidden"
+      CTS: "created_at"
+      UTS: "updated_at"
+      ATTR: "attributes"
+    _:
+      _: ad
+      ID: "id"
+      CID: "category_id"
+      OID: owner_id
+      TITLE: "title"
+      URI: "uri"
+      CONTENT: "content"
+      HID: "hidden"
+      CTS: "created_at"
+      UTS: "updated_at"
+      ATTR: "attributes"
+ROLE:
+  GROUP:
+    name: group_admin
+    comment: 群组管理员
+  USER:
+    name: user_admin
+    comment: 用户管理员
+  LAYOUT:
+    name: layout_editor
+    comment: 布局编辑
+  CONTENT:
+    name: content_editor
+    comment: 内容编辑
+  AD:
+    name: ad_editor
+    comment: 广告编辑
+  WORKFLOW:
+    name: workflow_editor
+    comment: 工作流编辑
+  RESOURCE:
+    name: resource_editor
+    comment: 资源编辑
+  IMG:
+    name: img_editor
+    comment: 图片编辑
+
+PERMISSION:
+  ULIST:
+    name: "user_list"
+    comment: "列出下级用户"
+  UADD:
+    name: "user_add"
+    comment: "增加新用户"
+  UROLE:
+    name: "user_role"
+    comment: "设置用户角色"
+  UDEL:
+    name: "user_del"
+    comment: "删除下级用户"
+  UMOD:
+    name: "user_mod"
+    comment: "修改用户"
+  UBAN:
+    name: "user_ban"
+    comment: "封禁用户"
+  GADD:
+    name: "group_add"
+    comment: "增加群组"
+  GMOD:
+    name: "group_mod"
+    comment: "修改群组"
+  GDEL:
+    name: "group_del"
+    comment: "删除群组"
+  GLIST:
+    name: "group_list"
+    comment: "列出群组"
+  CLIST:
+    name: "category_list"
+    comment: "列出栏目树"
+  CADD:
+    name: "category_add"
+    comment: "增加栏目"
+  CMOD:
+    name: "category_mod"
+    comment: "修改栏目"
+  CHID:
+    name: "category_hide"
+    comment: "隐藏栏目"
+  CDEL:
+    name: "category_del"
+    comment: "删除栏目"
+  AADD:
+    name: "article_add"
+    comment: "新增文章"
+  AMOD:
+    name: "article_mod"
+    comment: "修改文章"
+  ALIST:
+    name: "article_list"
+    comment: "列出文章"
+  AHID:
+    name: "article_hide"
+    comment: "隐藏文章"
+  ADEL:
+    name: "article_del"
+    comment: "删除文章"
+  AD_ADD:
+    name: ad_add
+    comment: 新增广告
+  AD_MOD:
+    name: ad_mod
+    comment: 修改广告
+  AD_LIST:
+    name: ad_list
+    comment: 列出广告
+  AD_HID:
+    name: ad_hid
+    comment: 隐藏广告
+  AD_DEL:
+    name: ad_del
+    comment: 删除广告
+
+  WTADD:
+    name: workflow_add
+    comment: 新增业务流
+  WTMOD:
+    name: workflow_mod
+    comment: 修改业务流
+  WTLIST:
+    name: workflow_list
+    comment: 列出业务流
+  WTHID:
+    name: workflow_hid
+    comment: 隐藏业务流
+
+  RUPLOAD:
+    name: resource_upload
+    comment: 上传资源
+  RLIST:
+    name: resource_list
+    comment: 列出资源
+  RMOD:
+    name: resource_mod
+    comment: 删除资源
+  RHID:
+    name: resource_hidden
+    comment: 隐藏资源
+  RDEL:
+    name: resource_delete
+    comment: 删除资源
+
+  IUPLOAD:
+    name: img_upload
+    comment: 上传图片
+  ILIST:
+    name: img_list
+    comment: 列出图片
+  IMOD:
+    name: img_mod
+    comment: 删除图片
+  IHID:
+    name: img_hidden
+    comment: 隐藏图片
+  IDEL:
+    name: img_delete
+    comment: 删除图片
+ERROR:
+  rounds: rounds must greater than 4 and less than 11
+  accAndPwd: wrong combination of account & password
+  needContact: 请留下联系方式
+

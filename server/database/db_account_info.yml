@@ -1,0 +1,7 @@
+client: "pg"
+host: "localhost"
+port: "5432"
+user: "vgk_cms"
+database: "vgk_cms"
+password: "vgk"
+

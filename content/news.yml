@@ -1,0 +1,124 @@
+type: ScrollContainer
+title: this is a cms
+children:
+  - type: Carousel
+    props:
+      card: true
+      height: 512px
+      initialIndex: 2
+    children:
+      - type: RowContainer
+        css:
+          background: url('/public/img/banner_bg.jpg') no-repeat fixed
+          height: 512
+        children:
+            - type: markdown
+              style:
+                - slogan-invert
+              payload: |
+                # 天鹏科技
+                - 技术栈
+                  - Vue2
+                  - node.js
+                    - graphQL
+                    - koa2
+                  - postgresQL
+                - 所想即所得
+                  - tree editor
+                - 基于用户脚本的展示
+                  - 非传统的Html，高效
+                  - 显式定义文档树结构，精确
+                - 完全模块化，通过组合模块定义页面，像乐高积木一样轻松
+                - 自定义布局
+                - 自定义样式
+                  - 基于特质的样式类
+      - type: ColumnContainer
+        css:
+          background: url('/public/img/banner_bg.jpg') no-repeat fixed
+          height: 512px
+        children:
+          - type: OverlayContainer
+            children:
+              - type: ColumnContainer
+                style:
+                  - transparent-black
+                  - padding5
+                children:
+                  - type: markdown
+                    css:
+                      margin: 1em
+                    style:
+                      - slogan-invert
+                    payload: |
+                      # 拥有一个网站，让世界了解你
+                      ## CRAFTING QUALITY PRODUCTS
+                  - type: button
+                    style:
+                      - large
+                      - green
+                      - round
+                      - solid
+                    text: 免费试用版本
+              - type: SVG
+                children:
+                  - type: svgBgBubble
+                    num: 30
+                  - type: svgPCB
+      - type: qrcode
+        title: 天鹏网络
+        size: 512
+        payload: |
+          http://www.sdtpkj.com
+      - type: brand
+        img: /public/img/logo@1x.png
+        brand: 天鹏网络
+        css:
+          padding: 1em
+      - type: TitleContainer
+        title: 关于我们
+        style:
+          - invert
+        css:
+          flex: 0 1 15%
+        children:
+          - type: markdown
+            style:
+              - slogan-invert
+            payload: |
+              山东天鹏网络技术有限公司致力于提供一站式服务网站建设，专注于p2p系统的研发与应用。打造临沂app研发，软件开发，网络营销为一体解决平台。
+      - type: markdown
+        payload: |
+          ![](/public/img/tp/lego.png)
+  - type: ColumnContainer
+    css:
+      background: url('/public/img/banner_bg.jpg') no-repeat fixed
+      height: 512px
+    children:
+      - type: OverlayContainer
+        children:
+          - type: ColumnContainer
+            style:
+              - transparent-black
+              - padding5
+            children:
+              - type: markdown
+                css:
+                  margin: 1em
+                style:
+                  - slogan-invert
+                payload: |
+                  # 拥有一个网站，让世界了解你
+                  ## CRAFTING QUALITY PRODUCTS
+              - type: button
+                style:
+                  - large
+                  - green
+                  - round
+                  - solid
+                text: 免费试用版本
+          - type: SVG
+            children:
+              - type: svgBgBubble
+                num: 50
+              - type: svgPCB
+

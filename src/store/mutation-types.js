@@ -1,0 +1,16 @@
+export const INIT_COLUMN = 'INIT_COLUMN'
+export const SAVE_CONTENT = 'SAVE_CONTENT'
+export const SAVE_LAYOUT = 'SAVE_LAYOUT'
+export const SAVE_ARTICLE_LIST = 'SAVE_ARTICLE_LIST'
+
+export const SET_CURRENT_COLUMN = 'SET_CURRENT_COLUMN'
+export const SET_CURRENT_ARTICLE = 'SET_CURRENT_ARTICLE'
+
+export const NEW_STYLESHEET = 'NEW_STYLESHEET'
+
+export const EXTERNAL_MESSAGE = 'EXTERNAL_MESSAGE'
+
+
+export const ERROR_MSG = 'ERROR_MSG'
+export const SUCC_MSG = 'SUCC_MSG'
+

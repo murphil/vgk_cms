@@ -1,0 +1,48 @@
+type: ScrollContainer
+title: this is a cms
+children:
+  -
+    type: Carousel
+    column: null
+    title: null
+    children:
+      -
+        type: picture
+        url: public/xxxxxx
+        title: first
+      -
+        type: picture
+        url: public/yyyyy
+        title: second
+      -
+        type: picture
+        url: public/zzzzz
+        title: third
+  -
+    type: tinyBar
+    column: news
+    speed: 1
+  -
+    type: RowContainer
+    children:
+      -
+        type: categoryList
+        category_uri: c1
+        title: c1栏目动态
+      -
+        type: categoryList
+        category_uri: c2
+        title: c2栏目动态
+      -
+        type: categoryList
+        category_uri: c3
+        title: c3栏目动态
+  -
+    type: markdown
+    payload: |
+      ### 这是一个Markdown文件
+      使用了 marked 包，测试下工作是否正常
+        - 下一步为 markdown 组件增加样式
+        - 样式可以指定
+          - 有一种默认样式
+          - 联系方式之类的内容要指定特殊样式

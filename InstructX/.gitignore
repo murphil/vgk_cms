@@ -1,0 +1,14 @@
+.DS_Store
+.idea/
+.sync
+settings.jar
+node_modules/
+dist/
+npm-debug.log
+*.iml
+__*.json
+account/*.yml.json
+mail/
+log/
+!account/mailAccount.yml.json
+!__defination.yml.json

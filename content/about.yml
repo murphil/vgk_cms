@@ -1,0 +1,35 @@
+type: ScrollContainer
+title: this is a cms
+children:
+  - type: ColumnContainer
+    css:
+      background: url('/public/img/banner_bg.jpg') no-repeat fixed
+      height: 512px
+    children:
+      - type: OverlayContainer
+        children:
+          - type: ColumnContainer
+            style:
+              - transparent-black
+              - padding5
+            children:
+              - type: markdown
+                css:
+                  margin: 1em
+                style:
+                  - slogan-invert
+                payload: |
+                  # 拥有一个网站，让世界了解你
+                  ## CRAFTING QUALITY PRODUCTS
+              - type: button
+                style:
+                  - large
+                  - green
+                  - round
+                  - solid
+                text: 免费试用版本
+          - type: SVG
+            children:
+              - type: svgPCB
+
+

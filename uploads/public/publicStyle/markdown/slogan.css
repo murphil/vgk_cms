@@ -1,0 +1,505 @@
+@top {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  min-width: 200px;
+  margin: 0 auto;
+}
+
+@top {
+  color: #657b83;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+
+@top .octicon {
+  display: inline-block;
+  vertical-align: text-top;
+  fill: currentColor;
+}
+
+@top a {
+  background-color: transparent;
+}
+
+@top a:active,
+@top a:hover {
+  outline-width: 0;
+}
+
+@top strong {
+  font-weight: bolder;
+}
+
+@top img {
+  border-style: none;
+}
+
+@top svg:not(:root) {
+  overflow: hidden;
+}
+
+@top code,
+@top kbd,
+@top pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+@top hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+@top input {
+  font: inherit;
+  margin: 0;
+}
+
+@top input {
+  overflow: visible;
+}
+
+@top [type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+@top * {
+  box-sizing: border-box;
+}
+
+@top input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+@top a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+@top a:hover,
+@top a:active {
+  text-decoration: underline;
+}
+
+@top strong {
+  font-weight: 600;
+}
+
+@top hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+@top hr::before {
+  display: table;
+  content: "";
+}
+
+@top hr::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+@top table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+@top td,
+@top th {
+  padding: 0;
+}
+
+@top p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+@top blockquote {
+  margin: 0;
+}
+
+@top ul,
+@top ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@top ol ol,
+@top ul ol {
+  list-style-type: lower-roman;
+}
+
+@top ul ul ol,
+@top ul ol ol,
+@top ol ul ol,
+@top ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+@top dd {
+  margin-left: 0;
+}
+
+@top code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+@top pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+@top .octicon {
+  vertical-align: text-bottom;
+}
+
+@top input {
+  -webkit-font-feature-settings: "liga" 0;
+  font-feature-settings: "liga" 0;
+}
+
+@top::before {
+  display: table;
+  content: "";
+}
+
+@top::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+@top>*:first-child {
+  margin-top: 0 !important;
+}
+
+@top>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+@top a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+@top .anchor {
+  float: left;
+  padding-right: 4px;
+  margin-left: -20px;
+  line-height: 1;
+}
+
+@top .anchor:focus {
+  outline: none;
+}
+
+@top p,
+@top blockquote,
+@top ul,
+@top ol,
+@top dl,
+@top table,
+@top pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+@top hr {
+  height: 0.25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: #e7e7e7;
+  border: 0;
+}
+
+@top blockquote {
+  padding: 0 1em;
+  color: #777;
+  border-left: 0.25em solid #00dd0b;
+}
+
+@top blockquote>:first-child {
+  margin-top: 0;
+}
+
+@top blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+@top kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+@top h1,
+@top h2,
+@top h3,
+@top h4,
+@top h5,
+@top h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  border: none;
+}
+
+@top h1 .octicon-link,
+@top h2 .octicon-link,
+@top h3 .octicon-link,
+@top h4 .octicon-link,
+@top h5 .octicon-link,
+@top h6 .octicon-link {
+  color: #000;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+@top h1:hover .anchor,
+@top h2:hover .anchor,
+@top h3:hover .anchor,
+@top h4:hover .anchor,
+@top h5:hover .anchor,
+@top h6:hover .anchor {
+  text-decoration: none;
+}
+
+@top h1:hover .anchor .octicon-link,
+@top h2:hover .anchor .octicon-link,
+@top h3:hover .anchor .octicon-link,
+@top h4:hover .anchor .octicon-link,
+@top h5:hover .anchor .octicon-link,
+@top h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+@top h1 {
+  font-size: 4em;
+}
+
+@top h2 {
+  font-size: 3em;
+}
+
+@top h3 {
+  font-size: 2.5em;
+}
+
+@top h4 {
+  font-size: 2em;
+}
+
+@top h5 {
+  font-size: 1.7em;
+}
+
+@top h6 {
+  font-size: 1.6em;
+  color: #777;
+}
+
+@top ul,
+@top ol {
+  padding-left: 2em;
+}
+
+@top ul ul,
+@top ul ol,
+@top ol ol,
+@top ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@top li>p {
+  margin-top: 16px;
+}
+
+@top li+li {
+  margin-top: 0.25em;
+}
+
+@top dl {
+  padding: 0;
+}
+
+@top dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+@top dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+@top table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+}
+
+@top table th {
+  font-weight: bold;
+}
+
+@top table th,
+@top table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+@top table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+@top table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+@top img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+@top code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+@top code::before,
+@top code::after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+@top pre {
+  word-wrap: normal;
+}
+
+@top pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+@top .highlight {
+  margin-bottom: 16px;
+}
+
+@top .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+@top .highlight pre,
+@top pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+@top pre code {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+@top pre code::before,
+@top pre code::after {
+  content: normal;
+}
+
+
+@top .full-commit .btn-outline:not(:disabled):hover {
+  color: #4078c0;
+  border: 1px solid #4078c0;
+}
+
+@top kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+@top :checked+.radio-label {
+  position: relative;
+  z-index: 1;
+  border-color: #4078c0;
+}
+
+@top .task-list-item {
+  list-style-type: none;
+}
+
+@top .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+@top .task-list-item input {
+  margin: 0 0.2em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+@top hr {
+  border-bottom-color: #eee;
+}

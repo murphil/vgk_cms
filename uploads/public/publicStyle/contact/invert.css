@@ -1,0 +1,20 @@
+@top {
+    background-color: transparent;
+}
+
+@top table {
+    color: #fdf6e3;
+    border: none;
+}
+@top table tr td:nth-child(1) {
+    text-align: right;
+    color: #b2b2b2;
+    border: none;
+    border-right: solid 1px grey;
+    padding-right: 0em;
+}
+@top table tr td:nth-child(2) {
+    padding-left: 0.3em;
+    border: none;
+}
+

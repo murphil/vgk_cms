@@ -1,0 +1,86 @@
+type: TPX
+header:
+  type: NavBar
+  children:
+    - type: brand
+      img: /public/img/logo@1x.png
+      brand: 天鹏网络
+      css:
+        padding: 1em
+    - type: NavBar
+      children:
+        - type: briefNav #navigator
+    - type: RowContainer
+      style:
+        - test
+      css:
+        flexFlow: row-reverse nowrap
+        flex: 1 1 auto
+        padding: 1em
+      children:
+        - type: button
+          style:
+            - small
+            - green
+          link: mailto:kefu@sdtpkj.com
+          text: 联系我们
+footer:
+  type: ColumnContainer
+  children:
+    - type: RowContainer
+      css:
+        justifyContent: space-around
+        backgroundColor: rgb(50, 56, 61)
+      children:
+        - type: TitleContainer
+          title: 关于我们
+          style:
+            - invert
+          css:
+            flex: 0 1 15%
+          children:
+            - type: markdown
+              style:
+                - slogan-invert
+              payload: |
+                山东天鹏网络技术有限公司致力于提供一站式服务网站建设，专注于p2p系统的研发与应用。打造临沂app研发，软件开发，网络营销为一体解决平台。
+        - type: TitleContainer
+          title: 联系方式
+          style:
+            - invert
+          children:
+            - type: contact
+              style:
+                - invert
+              css:
+                fontSize: 1.5em
+              mail: kefu@sdtpkj.com
+              wx: 山东天鹏网络 sdtpkj
+              #qq: 1234567
+              #phone: 32134
+              #address: asfdjk
+        - type: TitleContainer
+          title: 二维码
+          style:
+            - invert
+          children:
+            - type: qrcode
+              title: 天鹏网络
+              size: 128
+              dark: '#657b83'
+              payload: |
+                http://www.sdtpkj.com
+        - type: TitleContainer
+          title: 新闻动态
+          style:
+            - invert
+          children:
+            - type: categoryList
+              category_uri: main
+              title: c3栏目动态
+              brief: true
+modal:
+    type: ColumnContainer
+    children:
+      - type: notification
+

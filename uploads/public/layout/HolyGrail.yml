@@ -1,0 +1,53 @@
+type: HolyGrail
+header:
+  type: NavBar
+  children:
+    - type: brand
+    - type: RowContainer
+      children:
+        - type: briefNav #navigator
+        - type: RowContainer
+          css:
+            padding: 0.5em
+            flex: 0 0 auto
+          children:
+            - type: button
+              text: 联系我们
+              link: http://www.baidu.com
+
+footer:
+  type: ColumnContainer
+  children:
+    - type: qrcode
+      title: 天鹏网络
+      size: 128
+      dark: '#00B081'
+      payload: |
+        http://www.tianpeng.com
+    - type: RowContainer
+      css:
+        justifyContent : space-around
+      children:
+        - type: markdown
+          style:
+            - test
+          payload: |
+            > 13241423
+
+            1234567
+    - type: markdown
+      payload: |
+        copyright __2016__
+ads:
+  type: markdown
+  style:
+    - test
+  payload: |
+    123123
+    > asdfasdf
+
+nav:
+  type: markdown
+  payload: |
+    > blockquote
+    **nav**
